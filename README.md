@@ -1,2 +1,4 @@
 # 21UCS39AB
 Code for CS 39AB (Cloud Computing), Summer 2021
+
+This repository has code shared with my students in CS 39AB (Cloud Computing), Summer 2021, at MSU Denver. Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. It allows companies and organizations quickly set up services and applications with global reach without the need to invest large amounts of capital in data centers, equipment, and software. Cloud computing is one of the revolutionary technologies of our century. With a theoretical and hands-on approach, this course aims to introduce some of the most important aspects related to cloud computing, including virtualization, cloud storage, containerization, load balancing, scalability, elasticity, availability, security, and serverless computing. 
