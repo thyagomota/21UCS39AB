@@ -9,7 +9,7 @@ This goal of this activity is to describe the steps needed to launch an EC2 inst
 
 ### Step 1 - List VPCs
 
-'''
+```
 aws ec2 describe-vpcs
-'''
+```
 
