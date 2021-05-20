@@ -1,6 +1,6 @@
 # Activity 01
 
-## Launching an EC2 Instance on a Public Subnet
+## Launch an EC2 Instance on a Public Subnet
 
 ## Goal
 This goal of this activity is to describe the steps needed to launch an EC2 instance on a public subnet. 
