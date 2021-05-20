@@ -1,6 +1,6 @@
 # Activity 01
 
-## Launching an EC2 Instance
+## Launching an EC2 Instance on a Public Subnet
 
 ## Goal
 This goal of this activity is to describe the steps needed to launch an EC2 instance on a public subnet. 
@@ -13,7 +13,7 @@ This goal of this activity is to describe the steps needed to launch an EC2 inst
 aws ec2 describe-vpcs
 ```
 
-Save the id of the default VPC (eg, vpc-924e57f5). Also, what's the CIDR block of your default VPC?
+Save the id of the default VPC (eg, vpc-924e57f5). Also, can you tell what's the CIDR block of your default VPC?
 
 ### Step 2 - List the Subnets of the Default VPC
 
@@ -41,7 +41,7 @@ Save the security group id (eg, sg-093ec88542bd9d8ab).
 aws ec2 authorize-security-group-ingress \
     --group-id sg-093ec88542bd9d8ab \
     --protocol tcp \
-    --port 22 
+    --port 22 \
     --cidr 0.0.0.0/0
 ```
 
@@ -57,6 +57,8 @@ aws ec2 run-instances \
     --key-name cs39ab
 ```
 
+Save your instance id (eg i-03b47cff33c01f997)
+
 ### Step 6 - List all EC2 Instances
 
 ```
@@ -69,4 +71,11 @@ Save the IP address of your instance (eg 54.176.8.107).
 
 ```
 ssh -i cs39ab.pem ec2-user@54.176.8.107
+```
+
+### Step 8 - Terminate EC2 Instance 
+
+```
+aws ec2 terminate-instances \
+    --instance-ids i-03b47cff33c01f997
 ```
