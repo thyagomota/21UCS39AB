@@ -18,7 +18,8 @@ Save the id of the default VPC (eg, vpc-924e57f5). Also, what's the CIDR block o
 ### Step 2 - List the Subnets of the Default VPC
 
 ```
-aws ec2 describe-subnets --filters "Name=vpc-id,Values=vpc-924e57f5"
+aws ec2 describe-subnets \
+    --filters "Name=vpc-id,Values=vpc-924e57f5"
 ```
 
 Save the id of the subnet that has the property MapPublicIpOnLaunch set to true (eg, subnet-b1b256eb). 
@@ -26,7 +27,10 @@ Save the id of the subnet that has the property MapPublicIpOnLaunch set to true 
 ### Step 3 - Create a Security Group 
 
 ```
-aws ec2 create-security-group --group-name activity_01 --description activity_01 --vpc-id vpc-924e57f5 
+aws ec2 create-security-group \
+    --group-name activity_01 \
+    --description activity_01 \
+    --vpc-id vpc-924e57f5 
 ```
 
 Save the security group id (eg, sg-093ec88542bd9d8ab).
