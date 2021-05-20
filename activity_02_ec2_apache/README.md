@@ -22,7 +22,7 @@ aws ec2 create-security-group \
 
 Save the security group id (eg, sg-0156b96da4a9a8eca).
 
-### Step 1 - Add Ingress Rules to Security Group 
+### Step 2 - Add Ingress Rules to Security Group 
 
 ```
 aws ec2 authorize-security-group-ingress \
