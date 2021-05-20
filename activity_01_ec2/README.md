@@ -31,10 +31,14 @@ aws ec2 create-security-group --group-name activity_01 --description activity_01
 
 Save the security group id (eg, sg-093ec88542bd9d8ab).
 
-### Step 4 - Add Ingress Rule to Security Group 
+### Step 4 - Add an Ingress Rule to Security Group 
 
 ```
-aws ec2 authorize-security-group-ingress --group-id sg-093ec88542bd9d8ab --protocol tcp --port 22 --cidr 0.0.0.0/0
+aws ec2 authorize-security-group-ingress \
+    --group-id sg-093ec88542bd9d8ab \
+    --protocol tcp \
+    --port 22 
+    --cidr 0.0.0.0/0
 ```
 
 ### Step 5 - Launch an EC2 Instance
@@ -45,11 +49,20 @@ aws ec2 run-instances \
     --count 1 \
     --instance-type t2.micro \
     --security-group-ids sg-093ec88542bd9d8ab \
-    --subnet-id subnet-b1b256eb 
+    --subnet-id subnet-b1b256eb \
+    --key-name cs39ab
 ```
 
 ### Step 6 - List all EC2 Instances
 
 ```
 aws ec2 describe-instances
+```
+
+Save the IP address of your instance (eg 54.176.8.107). 
+
+### Step 7 - Connect to your EC2 Instance 
+
+```
+ssh -i cs39ab.pem ec2-user@54.176.8.107
 ```
