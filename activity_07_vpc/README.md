@@ -54,7 +54,7 @@ Put the instances into a new security group named "sgpri", allowing ssh access f
 
 ### Step 9 - Configure the Route Table for the Private Subnets
 
-Create a new route table and have it associated to both private subnets. At this point you should be able to any of the EC2 instances in the private subnets from the bastion host instance. However, internet access is not possible. Try it: 
+Create a new route table and have it associated to both private subnets. At this point you should be able to ssh to any of the EC2 instances in the private subnets from the bastion host instance. However, internet access should not work. Try it yourself: 
 
 ```
 curl www.google.com
@@ -62,4 +62,4 @@ curl www.google.com
 
 ### Step 10 - Adding a NAT Gateway 
 
-Create a NAT gateway in the public subnet. After the NAT gateway is up and running, add a default route in the private route configurations forwarding traffic to the NATT gateway. Internet access from the EC2 instances should work now. 
+Create a NAT gateway in the public subnet. After the NAT gateway is up and running, add a default route in the private route configurations forwarding traffic to the NAT gateway. Internet access from the EC2 instances should work now. 
