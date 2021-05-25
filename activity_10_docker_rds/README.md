@@ -56,3 +56,7 @@ docker run -i --name dollar2real dollar2real
 ```
 docker rm dollar2real
 ```
+
+### Step 9 - Try a Slightly Different Setup
+
+The image created in this activity had the db credentials saved as environment variables inside the docker image.  This setup is not ideal if you envision sharing the image in public repositories, such as docker hub.  Modify your dockerfile by removing the lines that create the environment variables. Then, pass the environment variables through docker run using the --env parameter. 
