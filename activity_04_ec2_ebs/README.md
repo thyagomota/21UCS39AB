@@ -1,6 +1,6 @@
 # Activity 04
 
-## Create an EBS Volume and Attach it to an EC2 Instance
+## EC2 Instance w/ EBS Volume
 
 ## Goal
 The goal of this activity is to create an EBS volume and attach/mount it to an EC2 instance. 

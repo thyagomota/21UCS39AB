@@ -1,6 +1,6 @@
 # Activity 10
 
-## Docker RDS Client
+## Docker w/ RDS
 
 ## Goal
 The goal of this activity is to create a docker container that connects to and uses a MySQL database running as an RDS instance. 
@@ -45,7 +45,7 @@ Copy Dockerfile from the src folder to build.
 docker build -t dollar2real .
 ```
 
-### Step 7 - Create and Run a Docker Container from Imagee
+### Step 7 - Create and Run a Docker Container from Image
 
 ```
 docker run -i --name dollar2real dollar2real
@@ -59,4 +59,11 @@ docker rm dollar2real
 
 ### Step 9 - Try a Slightly Different Setup
 
-The image created in this activity had the db credentials saved as environment variables inside the docker image.  This setup is not ideal if you envision sharing the image in public repositories, such as docker hub.  Modify your dockerfile by removing the lines that create the environment variables. Then, pass the environment variables through docker run using the --env parameter. 
+The image created in this activity had the db credentials saved as environment variables inside the docker image.  This setup is not ideal if you envision sharing the image in public repositories, such as docker hub.  Modify your dockerfile by removing the lines that created the environment variables. Then, pass the environment variables through docker run using the --env parameter. 
+
+Once you have secured your image, use the following commands to copy it to docker hub (replace motat with your id in docker). 
+
+```
+docker tag dollar2real motat/dollar2real
+docker push motat/dollar2real
+```

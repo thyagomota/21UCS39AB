@@ -1,6 +1,6 @@
 # Activity 09
 
-## MySQL RDS Setup
+## MySQL RDS
 
 ## Goal
 The goal of this activity is to create an RDS instance running MySQL.  

@@ -1,6 +1,6 @@
 # Activity 06
 
-## Upload/Download/Delete to/from an S3 Bucket
+## S3 Bucket Examples
 
 ## Goal
 The goal of this activity is to illustrate how to create an S3 bucket and how to upload/download/delete files to/from the s3 bucket programmatically. 

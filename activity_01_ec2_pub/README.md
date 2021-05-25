@@ -1,9 +1,9 @@
 # Activity 01
 
-## Launch an EC2 Instance on a Public Subnet
+## EC2 Instance on a Public Subnet
 
 ## Goal
-The goal of this activity is to describe the steps needed to launch an EC2 instance on a public subnet. After the instance is launched, users should be able to ssh to it. 
+The goal of this activity is to launch an EC2 instance on a public subnet. After the instance is launched, users should be able to ssh to it. 
  
 ## Steps
 

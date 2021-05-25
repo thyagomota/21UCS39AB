@@ -1,6 +1,6 @@
 # Activity 08
 
-## Docker Image Build
+## Docker
 
 ## Goal
 The goal of this activity is to illustrate how to create a docker image for a python application. 
@@ -48,7 +48,7 @@ Copy Dockerfile from the src folder.
 docker build -t dollar2real .
 ```
 
-### Step 8 - Create and Run a Docker Container from Imagee
+### Step 8 - Create and Run a Docker Container from Image
 
 ```
 docker run -i --name dollar2real dollar2real

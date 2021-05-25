@@ -1,6 +1,6 @@
 # Activity 03
 
-## Launch an EC2 Instance and Show some of its Metadata
+## EC2 Instance w/ Metadata
 
 ## Goal
 The goal of this activity is to launch an EC2 instance and show some of its metadata as an HTML page similar to the following: 

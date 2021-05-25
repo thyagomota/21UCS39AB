@@ -1,6 +1,6 @@
 # Activity 05
 
-## Create an EFS File System and Attach it to 2 EC2 Instances
+## EC2 Instances w/ EFS Volume
 
 ## Goal
 The goal of this activity is to illustrate how an EFS file system can be shared among multiple EC2 instances. 

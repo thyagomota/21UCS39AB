@@ -1,9 +1,9 @@
 # Activity 02
 
-## Launch an EC2 Instance w/ Apache Server
+## EC2 Instance w/ Apache Server
 
 ## Goal
-The goal of this activity is to describe the steps needed to start an Apache server on an EC2 instance for public access. 
+The goal of this activity is to start an Apache server on an EC2 instance for public access. 
 
 ## Preconditions
 
