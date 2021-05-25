@@ -38,8 +38,6 @@ pip3 freeze > requirements.txt
 
 Copy dollar2real.py from the src folder. Run it to make sure the application is working. 
 
-When you VPC was created, a route table was automatically created with one default local route.  Associate this route table to the public subnet and create a default route redirecting traffic to the internet gateway. 
-
 ### Step 6 - Create Dockerfile
 
 Copy Dockerfile from the src folder. 
