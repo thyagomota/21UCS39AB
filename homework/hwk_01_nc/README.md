@@ -9,3 +9,5 @@ The goal of this activity is to start a Netcat server on an EC2 instance for pub
 
 * launch_ec2_nc.py (finish the to-do's embedded in the provided code template)
 * user-data.sh
+
+Upload a zip containing both files on canvas. 
