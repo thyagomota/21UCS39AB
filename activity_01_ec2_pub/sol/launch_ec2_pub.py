@@ -37,21 +37,51 @@ if __name__ == "__main__":
         exit(1)
     print('Public subnet id is ' + public_subnet_id)
 
-    # TODO: create a security group 
-    
+    # TODOd: create a security group 
+    sg_id = client.create_security_group(
+        GroupName = 'activity_01',
+        Description = 'activity_01',
+        VpcId = default_vpc_id)['GroupId']
+    print('Security group was created with id ' + sg_id)
 
-    # TODO: add an ingress rule to security group
-    
+    # TODOd: add an ingress rule to security group
+    ip_permission_ssh = {
+        'FromPort': 22,
+        'ToPort':   22,
+        'IpProtocol': 'tcp',
+        'IpRanges': [ 
+            {
+                'CidrIp': '0.0.0.0/0',
+                'Description': 'ssh access to ec2 instance from anywhere!'
+            }
+        ]
+    }
+    client.authorize_security_group_ingress(
+        GroupId = sg_id, 
+        IpPermissions = [ ip_permission_ssh ]
+    )
 
-    # TODO: launch ec2 instance 
-    
+    # TODOd: launch ec2 instance 
+    instance_id = client.run_instances(
+        ImageId = 'ami-0b2ca94b5b49e0132',
+        MinCount = 1, 
+        MaxCount = 1,
+        InstanceType = 't2.micro',
+        SecurityGroupIds = [ sg_id ],
+        SubnetId = public_subnet_id, 
+        KeyName = 'cs39ab'
+    )['Instances'][0]['InstanceId']
+    print('Instance id is ' + instance_id)
 
     # wait for 1 minute for instance to be launched
-    # print('Waiting for instance to be launched...')
-    # time.sleep(60)
+    print('Waiting for instance to be launched...')
+    time.sleep(30)
 
-    # TODO: get the public IP of your instance
-    
+    # TODOd: get the public IP of your instance
+    ip_address = client.describe_instances(
+        InstanceIds = [ instance_id ]
+    )['Reservations'][0]['Instances'][0]['PublicIpAddress']
+    print(ip_address)
  
     # terminate ec2 instance
     # client.terminate_instances( 
