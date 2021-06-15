@@ -61,7 +61,7 @@ YOUR ANSWER HERE
 YOUR ANSWER HERE
 ```
 
-### TODO #5 Define a User Data Script
+## TODO #5 Define a User Data Script
 
 Save the file below as user-data.sh.
 
