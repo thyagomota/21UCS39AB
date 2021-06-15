@@ -43,7 +43,7 @@ YOUR ANSWER HERE
 ```
 YOUR ANSWER HERE
 ```
-Write down the id of the EFS file system returned by the command. 
+Write down the id of the security group returned by the command. 
 
 ```
 Security group id: YOUR ANSWER HERE
