@@ -8,7 +8,7 @@ The goal of this assignment is for you to describe the command-line interface (C
 ## TODO #1 - Create an EFS File System
 
 * name should be "data"
-* should us "general purpose" performance mode
+* should use "general purpose" performance mode
 * use the "one zone" option
 * hint: use efs's "create-file-system" command
 
