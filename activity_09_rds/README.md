@@ -37,7 +37,7 @@ CREATE DATABASE dollar2real;
 USE dollar2real;
 
 CREATE TABLE quotes (
-  `date`   DATE          PRIMARY KEY,
+  `date`   DATETIME      PRIMARY KEY,
   quote    DECIMAL(8, 4) NOT NULL
 );
 
