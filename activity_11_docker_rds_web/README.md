@@ -3,7 +3,7 @@
 ## Docker w/ RDS + Web Front End
 
 ## Goal
-The goal of this activity is to recreate the docker container from the previous activity, this time if a web front end. 
+The goal of this activity is to recreate the docker container from the previous activity, this time with a web front end. 
 
 ## Steps
 
