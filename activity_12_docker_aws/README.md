@@ -9,20 +9,20 @@ The goal of this activity is to recreate the docker container from the previous 
 
 ### Step 1 - Create a Security Group for the ECS Cluster 
 
-Allow access to ports 22 and 80 from anywhere and for the traffic going out. Leave all traffic allowed as the outbound rule for the sg. Name your sg "activity_11". The sg should be create in the default VPC. 
+Allow access to ports 22 and 80 from anywhere and for the traffic going out. Leave all traffic allowed as the outbound rule for the sg. Name your sg "activity_12". The sg should be create in the default VPC. 
 
 ### Step 2 - Create an ECS Cluster 
 
 Choose the following options:
 
 * Template: EC2 Linux + Networking
-* Cluster name: activity11
+* Cluster name: activity12
 * EC2 instance type: t2.micro
 * Number of instances: 1
 * Key pair: cs39ab
 * VPC: choose your default VPC
 * Subnets: just select one for now
-* Security group: select activity_11
+* Security group: select activity_12
 * Container instance IAM role: ECSInstanceRole
 
 ### Step 3 - Create a Task Definition 
