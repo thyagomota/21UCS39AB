@@ -29,6 +29,8 @@ Both functions should be called automatically by triggers. The db parameters sho
 
 Zip all of the files and submit the zip on Canvas. 
 
+In addition to those deliverables, you should also write a comment (on Canvas) with the URL of you webapp so I can test it remotely. I will try to grade as soon as possible and let you know when I am done so you can shutdown services. 
+
 ## Rubric
 
 * \+10 sql script
