@@ -1,0 +1,3 @@
+zip -r compute_similarity.zip \
+    compute_similarity.py \
+    stemming
